@@ -11,5 +11,27 @@ texts = [[word for word in string.lower().split() if word not in stoplist]
 pprint(texts)
 
 dictionary = corpora.Dictionary(texts)
-dictionary.save('/tmp/words.dict') #store dictionary for future reference
-print(dictionary.token2id)
+print(dictionary)
+
+#stem words
+
+# preprocessing
+# mapping of each word in dictionary to its d_i value
+#foreach word in dictionary, 
+		#sum(d_i^2)
+
+#for each query
+	# foreach word in query, check if in dictionary
+		# sum(q_i * d_i)
+
+	#denominator
+	# foreach word in query, check if in dictionary
+		#sum(q_i^2)
+
+# normalize by max value
+
+
+
+# code to read in queries and print out values
+
+
